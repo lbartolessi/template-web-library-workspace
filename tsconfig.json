@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2022", // Compatible con navegadores modernos
+    "module": "ESNext",  // Produce módulos ES
+    "moduleResolution": "NodeNext", // Cómo TS resuelve módulos (import .js)
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "lib": ["ESNext", "DOM"] // Incluye tipos para el DOM
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "test", "examples", "**/*.config.ts", "**/*.config.cjs"]
+}
