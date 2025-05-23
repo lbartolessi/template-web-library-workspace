@@ -1,8 +1,7 @@
 {
-  "name": "eventualiy",
+  "name": "template-web-library-workspace",
   "version": "0.1.0",
-  "description": "Event Bus for Web Components",
-  "type": "module",
+  "description": "Environment for developing a TypeScript library with Vite, Vitest, ESLint, and Prettier.",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
