@@ -9,9 +9,9 @@ mi-libreria-navegador/
 ├── tsconfig.json
 ├── vite.config.ts
 ├── examples/
-│   ├── index.html
-│   └── main.ts
+│ ├── index.html
+│ └── main.ts
 ├── src/
-│   └── index.ts
+│ └── index.ts
 └── test/
-    └── index.test.ts
+└── index.test.ts

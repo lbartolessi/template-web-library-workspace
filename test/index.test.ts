@@ -4,7 +4,9 @@ import { greet, VERSION } from '../src/index.js'; // Nota la extensión .js
 describe('Módulo principal de la librería', () => {
   describe('greet function', () => {
     it('debería saludar a una persona por su nombre', () => {
-      expect(greet('Navegante')).toBe('¡Hola, Navegante! Bienvenido/a desde la librería para navegador.');
+      expect(greet('Navegante')).toBe(
+        '¡Hola, Navegante! Bienvenido/a desde la librería para navegador.'
+      );
     });
   });
 

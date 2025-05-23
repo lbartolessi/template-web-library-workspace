@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2022", // Compatible con navegadores modernos
-    "module": "ESNext",  // Produce módulos ES
+    "module": "NodeNext", // Produce módulos ES
     "moduleResolution": "NodeNext", // Cómo TS resuelve módulos (import .js)
     "declaration": true,
     "declarationMap": true,
@@ -21,5 +21,12 @@
     "lib": ["ESNext", "DOM"] // Incluye tipos para el DOM
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist", "test", "examples", "**/*.config.ts", "**/*.config.cjs"]
+  "exclude": [
+    "node_modules",
+    "dist",
+    "test",
+    "examples",
+    "**/*.config.ts",
+    "**/*.config.cjs"
+  ]
 }
