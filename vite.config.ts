@@ -1,6 +1,21 @@
 import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
+  build: {
+    lib: {
+      entry: 'src/Eventuality.ts',
+      name: 'Eventuality',
+      fileName: (format) => `eventuality.${format}.js`,
+      formats: ['es', 'cjs', 'umd'],
+    },
+    rollupOptions: {
+      // Excluye dependencias externas si tienes
+      external: [],
+      output: {
+        globals: {},
+      },
+    },
+  },
   test: {
     globals: true,
     environment: 'node', // O 'jsdom' si tus pruebas interactúan con el DOM

@@ -1,31 +1,34 @@
 {
   "compilerOptions": {
-    "target": "ES2022", // Compatible con navegadores modernos
-    "module": "NodeNext", // Produce módulos ES
-    "moduleResolution": "NodeNext", // Cómo TS resuelve módulos (import .js)
+    "target": "ES2022", // Compatible with modern browsers
+    "module": "NodeNext", // Produces ES modules
+    "moduleResolution": "NodeNext", // How TS resolves modules (e.g., import .js)
     "declaration": true,
+    "declarationDir": "dist",
     "declarationMap": true,
     "sourceMap": true,
     "outDir": "./dist",
-    "rootDir": "./src",
+    "rootDir": ".", // Specifies the root directory of input files. Used to control the output directory structure with --outDir.
     "strict": true,
     "esModuleInterop": true,
+    "experimentalDecorators": true, // Enables experimental support for ES decorators.
+    "emitDecoratorMetadata": true, // Enables experimental support for emitting type metadata for decorators.
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
+      "examples/*": ["examples/*"]
     },
-    "lib": ["ESNext", "DOM"] // Incluye tipos para el DOM
+    "lib": ["ESNext", "DOM"] // Includes types for the DOM
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "examples/**/*"],
   "exclude": [
     "node_modules",
     "dist",
     "test",
-    "examples",
     "**/*.config.ts",
     "**/*.config.cjs"
   ]
